@@ -66,7 +66,7 @@ Loss function is
 ${J(\vec{W}) = \displaystyle \frac{(f(\vec{X}) - y)^2}{2}}$
 
 For $m$ training examples: 
-${(\vec{X_1}, y_1), (\vec{X_2}, y_2), (\vec{X_3}, y_3), \ldots,  (\vec{X_m}, y_m) s}$
+${(\vec{X_1}, y_1), (\vec{X_2}, y_2), (\vec{X_3}, y_3), \ldots,  (\vec{X_m}, y_m)}$
 
 The loss function is:
 
@@ -95,14 +95,14 @@ $$J(\vec{W}) = \displaystyle \frac1{2m}\sum_{i=1}^{m}\left( f(\vec{X_i}) - y_i  
 
 We can calculate it as:
 
-$\nabla J(\vec W) = \begin{pmatrix} 
+${\nabla J(\vec W) = \begin{pmatrix} 
     \displaystyle \frac {\partial J(\vec W)}{\partial w_1} \\
     \displaystyle \frac{\partial J(\vec W)}{\partial w_2} \\
     \vdots \\ 
     \displaystyle \frac {\partial J(\vec W)}{\partial w_n} \\
-\end{pmatrix}$
+\end{pmatrix}}$
 
-$\begin{aligned}
+${\begin{aligned}
     \displaystyle \frac {\partial J(\vec W)} {\partial w_1} & =  \displaystyle \frac{\partial}{\partial w_1} \left(\frac1{2m}\sum_{i=1}^{m}\left( f(\vec{X_i}) - y_i  \right)^2 \right) \\
     & = \displaystyle \frac1{2m}\sum_{i=1}^{m}\frac{\partial}{\partial w_1}  \left( f(\vec{X_i}) - y_i  \right)^2  \\
     & = \displaystyle \frac1{2m}\sum_{i=1}^{m} 2 \left( f(\vec{X_i}) - y_i  \right)^1 \frac{\partial}{\partial w_1}  \left( f(\vec{X_i}) - y_i  \right)  \\
@@ -110,11 +110,11 @@ $\begin{aligned}
     & = \displaystyle \frac1{m}\sum_{i=1}^{m} \left( f(\vec{X_i}) - y_i  \right) \frac{\partial \left( \vec W \cdot \vec X_i \right)}{\partial w_1}\\
     & = \displaystyle \frac1{m}\sum_{i=1}^{m} \left( f(\vec{X_i}) - y_i  \right) \frac{\partial \left( w_1 x_1^{(i)} + w_2 x_2^{(i)} + \cdots + w_n x_n^{(i)}\right)}{\partial w_1}\\
     & = \displaystyle \frac1{m}\sum_{i=1}^{m} \left( f(\vec{X_i}) - y_i  \right) x_1^{(i)}\\
-\end{aligned}$
+\end{aligned}}$
 
 Thus,
 
-$\begin{aligned}
+${\begin{aligned}
 \nabla J(\vec W) & = \begin{pmatrix} 
     \displaystyle \frac1{m}\sum_{i=1}^{m} \left( f(\vec{X_i}) - y_i  \right) x_1^{(i)} \\
     \displaystyle \frac1{m}\sum_{i=1}^{m} \left( f(\vec{X_i}) - y_i  \right) x_2^{(i)} \\
@@ -141,7 +141,7 @@ $\begin{aligned}
 \end{pmatrix}\\
 & = \displaystyle \frac1{m}\sum_{i=1}^{m}  \left( f(\vec{X_i}) - y_i  \right) \overrightarrow X^{(i)}
  \\
-\end{aligned}$
+\end{aligned}}$
 
 Thus the final expression is:
 $$\nabla J(\vec W) = \displaystyle \frac1{m}\sum_{i=1}^{m}  \left( f(\vec{X_i}) - y_i  \right) \overrightarrow X^{(i)}
