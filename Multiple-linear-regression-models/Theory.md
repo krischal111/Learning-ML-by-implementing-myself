@@ -95,15 +95,16 @@ $$J(\vec{W}) = \displaystyle \frac1{2m}\sum_{i=1}^{m}\left( f(\vec{X_i}) - y_i  
 
 We can calculate it as:
 
-${\nabla J(\vec W) = {\begin{pmatrix} 
-    \displaystyle \frac {\partial J(\vec W)}{\partial w_1} \\
+${\nabla J(\vec W) = 
+{\begin{pmatrix} 
+    \displaystyle \frac{\partial J(\vec W)}{\partial w_1} \\
     \displaystyle \frac{\partial J(\vec W)}{\partial w_2} \\
     \vdots \\ 
     \displaystyle \frac {\partial J(\vec W)}{\partial w_n}
 \end{pmatrix}}}$
 
 ${\begin{aligned}
-    \displaystyle \frac {\partial J(\vec W)} {\partial w_1} & =  \displaystyle \frac{\partial}{\partial w_1} \left(\frac1{2m}\sum_{i=1}^{m}\left( f(\vec{X_i}) - y_i  \right)^2 \right) \\
+    \displaystyle \frac{\partial J(\vec W)} {\partial w_1} & =  \displaystyle \frac{\partial}{\partial w_1} \left(\frac1{2m}\sum_{i=1}^{m}\left( f(\vec{X_i}) - y_i  \right)^2 \right) \\
     & = \displaystyle \frac1{2m}\sum_{i=1}^{m}\frac{\partial}{\partial w_1}  \left( f(\vec{X_i}) - y_i  \right)^2  \\
     & = \displaystyle \frac1{2m}\sum_{i=1}^{m} 2 \left( f(\vec{X_i}) - y_i  \right)^1 \frac{\partial}{\partial w_1}  \left( f(\vec{X_i}) - y_i  \right)  \\
     & = \displaystyle \frac1{m}\sum_{i=1}^{m} \left( f(\vec{X_i}) - y_i  \right) \frac{\partial f(\vec{X_i})}{\partial w_1}\\
