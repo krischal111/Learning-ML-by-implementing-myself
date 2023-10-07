@@ -37,7 +37,7 @@ $$ \vec{W} = \begin{pmatrix}
 
 Thus, from our given inputs and the parameters, our model functon is:
 
-$ f(\vec{X}) = w_1 x_1 + w_2 x_2 + w_3 x_3 + \cdots + w_n x_n $
+${ f( \vec{X} ) = w_1 x_1 + w_2 x_2 + w_3 x_3 + \cdots + w_n x_n}$
 
 Thus we can simplify the model as:
 
