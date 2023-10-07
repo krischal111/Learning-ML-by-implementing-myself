@@ -63,7 +63,7 @@ One of the simplest loss function we can use is the Mean Squared Error (MSE)
 For a single example let's say $(\vec{X}, y)$:
 
 Loss function is 
- $J(\vec{W}) = \displaystyle \frac{(f(\vec{X}) - y)^2}{2}$
+${J(\vec{W}) = \displaystyle \frac{(f(\vec{X}) - y)^2}{2}}$
 
 For $m$ training examples: 
 $ (\vec{X_1}, y_1), (\vec{X_2}, y_2), (\vec{X_3}, y_3), \ldots,  (\vec{X_m}, y_m) $
@@ -75,7 +75,7 @@ $J(\vec{W}) = \displaystyle \frac{
     \left(f(\vec{X_2}) - y_2\right)^2 + 
     \cdots + 
     \left(f(\vec{X_m}) - y_m\right)^2
-}{2m} $
+}{2m}$
 
 Which is literally the half of the mean of squares of the errors.
 The errors are also called residuals.
