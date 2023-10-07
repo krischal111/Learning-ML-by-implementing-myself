@@ -104,11 +104,11 @@ $${\nabla J(\vec{W}) =
 \end{pmatrix}}}$$
 
 ${\begin{aligned}
-    \displaystyle \frac{\partial J(\vec W)} {\partial w_1} & =  \displaystyle \frac{\partial}{\partial w_1} \left(\frac1{2m}\sum_{i=1}^{m}\left( f(\vec{X_i}) - y_i  \right)^2 \right) \\
+    \displaystyle \frac{\partial J(\vec{W})} {\partial w_1} & =  \displaystyle \frac{\partial}{\partial w_1} \left(\frac1{2m}\sum_{i=1}^{m}\left( f(\vec{X_i}) - y_i  \right)^2 \right) \\
     & = \displaystyle \frac1{2m}\sum_{i=1}^{m}\frac{\partial}{\partial w_1}  \left( f(\vec{X_i}) - y_i  \right)^2  \\
     & = \displaystyle \frac1{2m}\sum_{i=1}^{m} 2 \left( f(\vec{X_i}) - y_i  \right)^1 \frac{\partial}{\partial w_1}  \left( f(\vec{X_i}) - y_i  \right)  \\
     & = \displaystyle \frac1{m}\sum_{i=1}^{m} \left( f(\vec{X_i}) - y_i  \right) \frac{\partial f(\vec{X_i})}{\partial w_1}\\
-    & = \displaystyle \frac1{m}\sum_{i=1}^{m} \left( f(\vec{X_i}) - y_i  \right) \frac{\partial \left( \vec W \cdot \vec X_i \right)}{\partial w_1}\\
+    & = \displaystyle \frac1{m}\sum_{i=1}^{m} \left( f(\vec{X_i}) - y_i  \right) \frac{\partial \left( \vec{W} \cdot \vec{X_i} \right)}{\partial w_1}\\
     & = \displaystyle \frac1{m}\sum_{i=1}^{m} \left( f(\vec{X_i}) - y_i  \right) \frac{\partial \left( w_1 x_1^{(i)} + w_2 x_2^{(i)} + \cdots + w_n x_n^{(i)}\right)}{\partial w_1}\\
     & = \displaystyle \frac1{m}\sum_{i=1}^{m} \left( f(\vec{X_i}) - y_i  \right) x_1^{(i)}\\
 \end{aligned}}$
@@ -116,7 +116,7 @@ ${\begin{aligned}
 Thus,
 
 ${\begin{aligned}
-\nabla J(\vec W) & = \begin{pmatrix} 
+\nabla J(\vec{W}) & = \begin{pmatrix} 
     \displaystyle \frac1{m}\sum_{i=1}^{m} \left( f(\vec{X_i}) - y_i  \right) x_1^{(i)} \\
     \displaystyle \frac1{m}\sum_{i=1}^{m} \left( f(\vec{X_i}) - y_i  \right) x_2^{(i)} \\
     \vdots \\
@@ -145,7 +145,7 @@ ${\begin{aligned}
 \end{aligned}}$
 
 Thus the final expression is:
-$$\nabla J(\vec W) = \displaystyle \frac1{m}\sum_{i=1}^{m}  \left( f(\vec{X_i}) - y_i  \right) \overrightarrow X^{(i)}
+$$\nabla J(\vec{W}) = \displaystyle \frac1{m}\sum_{i=1}^{m}  \left( f(\vec{X_i}) - y_i  \right) \overrightarrow X^{(i)}
 $$
 
 
@@ -154,14 +154,14 @@ If we add an extra feature $x_0$, which has a constant value (let's say $1$), th
 
 Thus, for our model,
 
-$f(\vec X) = w_0 + w_1 x_1 + w_2 x_2 + \cdots + w_n x_n $ ( since $x_0 = 1, w_0 x_0 = w_0$)
+$f(\vec{X}) = w_0 + w_1 x_1 + w_2 x_2 + \cdots + w_n x_n $ ( since $x_0 = 1, w_0 x_0 = w_0$)
 
 By doing this, none of the formulas are affected. But we incur a little cost of addition of single extra feature for all the examples.
 
 That was one of the way. Another way is to add bias manually.
 We add bias to the existing model as:
 
-$f_{new}(\vec X) = f(\vec X) + b $
+$f_{new}(\vec{X}) = f(\vec{X}) + b $
 
 Now, to calculate the gradient, for all the weights, the gradient calculation step remains the same. For the bias, we calculate the gradient separately as:
 $ \displaystyle \frac{\partial J(\overrightarrow W, b)}{\partial b} = \sum_{i=1}^{m}\left(f(\overrightarrow X_i) - y_i\right) $
@@ -174,7 +174,8 @@ We have a learning rate = $\alpha$, and the usual gradient of the loss function 
 
 Using those values, we get the gradient descent algorithm as the simple iteration of the following step.
 
-$$\vec W_{new} = \vec W - \alpha \nabla J (\vec W)$$
+$$\vec{W_{new}} = \vec{W} - \alpha \nabla J (\vec{W})$$
+
 $$W = W_{new}$$
 
 ## Regularization of the parameters
