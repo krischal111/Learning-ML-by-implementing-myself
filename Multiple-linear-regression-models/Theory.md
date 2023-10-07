@@ -66,7 +66,7 @@ Loss function is
 ${J(\vec{W}) = \displaystyle \frac{(f(\vec{X}) - y)^2}{2}}$
 
 For $m$ training examples: 
-$ (\vec{X_1}, y_1), (\vec{X_2}, y_2), (\vec{X_3}, y_3), \ldots,  (\vec{X_m}, y_m) $
+$ {(\vec{X_1}, y_1), (\vec{X_2}, y_2), (\vec{X_3}, y_3), \ldots,  (\vec{X_m}, y_m) }$
 
 The loss function is:
 
