@@ -1,9 +1,9 @@
 
-## Documentation of Multiple linear regression model (without bias*)
+# Documentation of Multiple linear regression model (without bias*)
 
 Let's get the theory super right first.
 
-#### Features
+## Features
 
 Our input are multiple features:
 $x_1, x_2, x_3, \ldots, x_n $
@@ -18,7 +18,7 @@ $$ \vec{X} = \begin{pmatrix}
     x_n 
 \end{pmatrix} $$
 
-#### Parameters
+## Parameters
 
 Our model parameters the set of weights for each feature. (We don't have bias, but there is a workaround*😉) Listing them: 
 $w_1, w_2, w_3, ..., w_n $
@@ -33,7 +33,7 @@ $$ \vec{W} = \begin{pmatrix}
     \\ w_n 
 \end{pmatrix} $$
 
-### Model
+## Model
 
 Thus, from our given inputs and the parameters, our model functon is:
 
@@ -56,7 +56,7 @@ $$ f(\vec{X}) = \begin{pmatrix}
 $$ f(\vec X) = \vec W \cdot \vec X$$
 
 
-#### Loss function
+## Loss function
 
 One of the simplest loss function we can use is the Mean Squared Error (MSE)
 
@@ -91,7 +91,7 @@ Now, the loss function can be simplified as a simple function of summation as:
 $$J(\vec{W}) = \displaystyle \frac1{2m}\sum_{i=1}^{m}\left( f(\vec{X_i}) - y_i  \right)^2 $$
 
 
-#### Gradient of the loss function
+## Gradient of the loss function
 
 We can calculate it as:
 
@@ -143,7 +143,7 @@ $$\nabla J(\vec W) = \displaystyle \frac1{m}\sum_{i=1}^{m}  \left( f(\vec{X_i}) 
 $$
 
 
-#### *Adding Bias
+## *Adding Bias
 If we add an extra feature $x_0$, which has a constant value (let's say $1$), then ***the weight*** corresponding to the feature, ${w_0}$ becomes the bias.
 
 Thus, for our model,
@@ -160,7 +160,7 @@ $f_{new}(\vec X) = f(\vec X) + b $
 Now, to calculate the gradient, for all the weights, the gradient calculation step remains the same. For the bias, we calculate the gradient separately as:
 $ \displaystyle \frac{\partial J(\overrightarrow W, b)}{\partial b} = \sum_{i=1}^{m}\left(f(\overrightarrow X_i) - y_i\right) $
 
-#### Gradient Descent
+## Gradient Descent
 
 It's very simple.
 
@@ -170,10 +170,12 @@ Using those values, we get the gradient descent algorithm as the simple iteratio
 
 $$\vec W_{new} = \vec W - \alpha \nabla J (\vec W)$$
 $$W = W_{new}$$
-#### Regularization of the parameters
+
+## Regularization of the parameters
+
 They can be done pretty easily by adding a regularization parameters.
 
-##### L1 Regularization
+### L1 Regularization
 
 $$J(\vec{W}) = \displaystyle \frac1{2m}\sum_{i=1}^{m}\left( f(\vec{X_i}) - y_i  \right)^2  + \frac\lambda{m} \lVert \vec W \rVert_1$$
 where, $ \displaystyle \lVert \vec W \rVert_1 = \sum_{j=1}^{n}\vert w_j \vert $ is the L1 norm of the weight vector $\vec W$.
@@ -181,7 +183,7 @@ where, $ \displaystyle \lVert \vec W \rVert_1 = \sum_{j=1}^{n}\vert w_j \vert $ 
 $$\nabla J(\vec W) = \displaystyle \frac1{m}\sum_{i=1}^{m}  \left( f(\vec{X_i}) - y_i  \right) \overrightarrow X^{(i)} + \frac\lambda{m}\begin{pmatrix} \displaystyle \frac{\partial |w_1|}{\partial w_1} \\ \displaystyle \frac{\partial |w_2|}{\partial w_2} \\ \vdots \\ \displaystyle \frac{\partial |w_n|}{\partial w_n} \end{pmatrix}
 $$
 
-#### L2 Regularization
+### L2 Regularization
 
 $$J(\vec{W}) = \displaystyle \frac1{2m}\sum_{i=1}^{m}\left( f(\vec{X_i}) - y_i  \right)^2  + \frac\lambda{2m} \lVert \vec W \rVert_2$$
 where, $ \displaystyle \lVert \vec W \rVert_2 = \sum_{j=1}^{n} w_j^2 $ is the L2 norm of the weight vector $\vec W$.
