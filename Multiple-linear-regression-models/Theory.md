@@ -193,7 +193,7 @@ $$
 ### L2 Regularization
 
 $$J(\vec{W}) = \displaystyle \frac1{2m}\sum_{i=1}^{m}\left( f(\vec{X_i}) - y_i  \right)^2  + \frac\lambda{2m} \lVert \vec W \rVert_2$$
-where, $ \displaystyle \lVert \vec W \rVert_2 = \sum_{j=1}^{n} w_j^2 $ is the L2 norm of the weight vector $\vec W$.
+where, $\displaystyle \lVert \vec W \rVert_2 = \sum_{j=1}^{n} w_j^2 $ is the L2 norm of the weight vector $\vec W$.
 
 Now, taking gradient of the regularization term, we get:
 
