@@ -185,7 +185,7 @@ They can be done pretty easily by adding a regularization parameters.
 ### L1 Regularization
 
 $$J(\vec{W}) = \displaystyle \frac1{2m}\sum_{i=1}^{m}\left( f(\vec{X_i}) - y_i  \right)^2  + \frac\lambda{m} \lVert \vec W \rVert_1$$
-where, $ \displaystyle \lVert \vec W \rVert_1 = \sum_{j=1}^{n}\vert w_j \vert $ is the L1 norm of the weight vector $\vec W$.
+where, $ \displaystyle \lVert \vec W \rVert_1 = \sum_{j=1}^{n}\vert w_j \vert$ is the L1 norm of the weight vector $\vec W$.
 
 $$\nabla J(\vec W) = \displaystyle \frac1{m}\sum_{i=1}^{m}  \left( f(\vec{X_i}) - y_i  \right) \overrightarrow X^{(i)} + \frac\lambda{m}\begin{pmatrix} \displaystyle \frac{\partial |w_1|}{\partial w_1} \\ \displaystyle \frac{\partial |w_2|}{\partial w_2} \\ \vdots \\ \displaystyle \frac{\partial |w_n|}{\partial w_n} \end{pmatrix}
 $$
