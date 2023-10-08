@@ -164,7 +164,7 @@ We add bias to the existing model as:
 ${f_{new}(\vec{X}) = f(\vec{X}) + b}$
 
 Now, to calculate the gradient, for all the weights, the gradient calculation step remains the same. For the bias, we calculate the gradient separately as:
-$ \displaystyle \frac{\partial J(\overrightarrow W, b)}{\partial b} = \sum_{i=1}^{m}\left(f(\overrightarrow X_i) - y_i\right) $
+$\displaystyle \frac{\partial J(\overrightarrow W, b)}{\partial b} = \sum_{i=1}^{m}\left(f(\overrightarrow X_i) - y_i\right)$
 
 ## Gradient Descent
 
