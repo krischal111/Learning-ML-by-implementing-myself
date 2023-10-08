@@ -206,7 +206,7 @@ $\begin{aligned}
     & = \frac{\lambda}{m} \begin{pmatrix}
             w_1 \\ w_2 \\ \vdots \\ w_n 
         \end{pmatrix} \\
-    & = \frac{\lambda}{m} \overrightarrow W \\
+    & = \frac{\lambda}{m} \overrightarrow W
 \end{aligned}$
 
 $$\nabla J(\vec W) = \displaystyle \frac1{m}\sum_{i=1}^{m}  \left( f(\vec{X_i}) - y_i  \right) \overrightarrow X^{(i)} + \frac{\lambda}{m} \overrightarrow W
