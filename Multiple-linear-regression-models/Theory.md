@@ -197,7 +197,7 @@ where, $\displaystyle \lVert \vec W \rVert_2 = \sum_{j=1}^{n} w_j^2$ is the L2 n
 
 Now, taking gradient of the regularization term, we get:
 
-$\begin{aligned}
+$$\begin{aligned}
     \displaystyle \nabla \frac{\lambda}{2m} \Vert \vec W \Vert _2 
     & = \frac{\lambda}{2m}\nabla \left( w_1^2 + w_2^2 + \cdots + w_n^2 \right) \\
     & = \frac{\lambda}{2m} \begin{pmatrix}
@@ -207,7 +207,7 @@ $\begin{aligned}
             w_1 \\ w_2 \\ \vdots \\ w_n 
         \end{pmatrix} \\
     & = \frac{\lambda}{m} \overrightarrow W
-\end{aligned}$
+\end{aligned}$$
 
 $$\nabla J(\vec W) = \displaystyle \frac1{m}\sum_{i=1}^{m}  \left( f(\vec{X_i}) - y_i  \right) \overrightarrow X^{(i)} + \frac{\lambda}{m} \overrightarrow W
 $$
