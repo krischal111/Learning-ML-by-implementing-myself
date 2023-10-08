@@ -192,13 +192,15 @@ $$
 
 ### L2 Regularization
 
-$$J(\vec{W}) = \displaystyle \frac1{2m}\sum_{i=1}^{m}\left( f(\vec{X_i}) - y_i  \right)^2  + \frac\lambda{2m} \lVert \vec W \rVert_2$$
-where, $\displaystyle \lVert \vec W \rVert_2 = \sum_{j=1}^{n} w_j^2$ is the L2 norm of the weight vector $\vec W$.
+$$J(\vec{W}) = \displaystyle \frac1{2m}\sum_{i=1}^{m}\left( f(\vec{X_i}) - y_i  \right)^2  + \frac\lambda{2m} {\lVert \vec W \rVert_2}^2$$
+where, $\displaystyle \lVert \vec W \rVert_2 = \sqrt{\sum_{j=1}^{n} w_j^2}$ is the L2 norm of the weight vector $\vec W$.
+
+i.e. $${\Vert \overrightarrow W \Vert_2}^2 = \displaystyle\sum_{j=1}^{n}{{w_j}^2}$$
 
 Now, taking gradient of the regularization term, we get:
 
 $$\begin{aligned}
-    \displaystyle \nabla \frac{\lambda}{2m} \Vert \vec W \Vert _2 
+    \displaystyle \nabla \frac{\lambda}{2m} \Vert \vec W \Vert _2 ^2
     & = \frac{\lambda}{2m}\nabla \left( w_1^2 + w_2^2 + \cdots + w_n^2 \right) \\
     & = \frac{\lambda}{2m} \begin{pmatrix}
             2 w_1 \\ 2 w_2 \\ \vdots \\ 2 w_n

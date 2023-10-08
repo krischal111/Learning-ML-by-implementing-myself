@@ -2,14 +2,16 @@
 
 ### LRM:
 ##### Done:
-1. Implemented for single variable and single parameter.
-2. Implemented for multiple parameters.
-3. Applied regularization to the parameters.
-4. Gradient descent using derivatives caluculation using analytical method, as well as numerical method.
+1. Implemented for single feature and single parameter (just a single weight).
+2. Implemented for single featuire and multiple parameters (weight and bias).
+3. Applied regularization to the parameters (L1 and L2).
+4. Gradient descent using derivatives caluculation using analytical method, as well as numerical method (Just a way to calulate derivative).
+5. Documentation of the mathematics behind the Multiple Linear Regression Model.
 
 ##### To do:
 1. Implement Linear Regression Model for multiple features.
 2. Implement a classification model.
+3. A mathematics visualization of loss function. (A bowl like graph, a parabola in 3d)
 
 ### Clustering:
 ##### Done:
