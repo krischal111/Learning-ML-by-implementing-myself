@@ -154,14 +154,14 @@ If we add an extra feature $x_0$, which has a constant value (let's say $1$), th
 
 Thus, for our model,
 
-$f(\vec{X}) = w_0 + w_1 x_1 + w_2 x_2 + \cdots + w_n x_n $ ( since $x_0 = 1, w_0 x_0 = w_0$)
+${f(\vec{X}) = w_0 + w_1 x_1 + w_2 x_2 + \cdots + w_n x_n}$ ( since ${x_0 = 1, w_0 x_0 = w_0}$)
 
 By doing this, none of the formulas are affected. But we incur a little cost of addition of single extra feature for all the examples.
 
 That was one of the way. Another way is to add bias manually.
 We add bias to the existing model as:
 
-$f_{new}(\vec{X}) = f(\vec{X}) + b $
+${f_{new}(\vec{X}) = f(\vec{X}) + b}$
 
 Now, to calculate the gradient, for all the weights, the gradient calculation step remains the same. For the bias, we calculate the gradient separately as:
 $ \displaystyle \frac{\partial J(\overrightarrow W, b)}{\partial b} = \sum_{i=1}^{m}\left(f(\overrightarrow X_i) - y_i\right) $
