@@ -1,0 +1,30 @@
+Date,Location ,Incident,Category,Numbers of Direct Deaths,Numbers of InDirect Deaths,"INES
+level",Latitude,Longitude
+29/09/1957,"Mayak, Kyshtym, Soviet Union",Kyshtym disaster,Storage/Handling,,200,6,55.7131,60.8526
+10/10/1957,"Sellafield, Cumberland, United Kingdom",Windscale fire,Operational/Safety Measures,0,240,5,54.4167,-3.4833
+03/01/1961,"Idaho Falls, Idaho, United States",SL-1 prototype explosion,Operator Error,3,,4,43.492,-112.0401
+05/10/1966,"Frenchtown Charter Township, Michigan, United States",Fermi 1 Reactor meltdown,Technical Flaws,0,,4,41.9562,-83.6639
+21/01/1969,"Lucens reactor, Vaud, Switzerland","Loss-of-Coolant Accident (January 21, 1969)",Operator Error,0,,4,46.6772,6.875
+07/12/1975,"Greifswald, East Germany",Greifswald Nuclear Power Plant fire,Electrical Error,0,,3,54.0833,13.3833
+05/01/1976,"Jaslovské Bohunice, Czechoslovakia",Fuel Rod Ejection during Fuel Replacement,Operator Error,2,,4,48.452,17.8197
+28/03/1979,"Three Mile Island, Pennsylvania, United States",Partial Core Meltdown (Operator Errors),Operator/Technical Flaws,0,,5,40.1575,-76.7022
+15/09/1984,"Athens, Alabama, United States",Browns Ferry Unit 2 Outage (Six-Year,Safety Violations/Design Problems,0,,,34.8029,-86.9717
+09/03/1985,"Athens, Alabama, United States",Browns Ferry Units Startup Malfunction,Instrumentation Malfunction,0,,,34.8029,-86.9717
+11/04/1986,"Plymouth, Massachusetts, United States",Pilgrim Nuclear Power Plant Emergency Shutdown,Equipment Problems,0,,,41.9584,-70.6673
+26/04/1986,"Chernobyl, Chernobyl Raion (now Vyshhorod Raion), Kiev Oblast, Ukrainian SSR, Soviet Union",Chernobyl disaster,Design/Safety Procedures,28,"4,000",7,51.2763,30.2219
+04/05/1986,"Hamm-Uentrop, West Germany",THTR-300 reactor,Experimental Operation,0,,,51.6651,7.8768
+09/12/1986,"Surry, Virginia, United States",Surry Nuclear Power Plant pipe break,Equipment Failure,4,,,37.1508,-76.8164
+31/03/1987,"Delta, Pennsylvania, United States",Peach Bottom units shutdown,Cooling Malfunctions,0,,,39.9484,-76.5684
+19/12/1987,"Lycoming, New York, United States",Niagara Mohawk Power Corporation shutdown,Malfunctions,0,,,42.223,-76.9957
+17/03/1989,"Lusby, Maryland, United States",Calvert Cliff Units extended shutdown,Inspection Findings,0,,,38.3589,-76.4331
+19/10/1989,"Vandellòs, Spain",Vandellòs nuclear power plant accident,Cooling System Failure,0,,3,41.0469,0.891
+01/03/1992,"Sosnovy Bor, Leningrad Oblast, Russia",Sosnovy Bor nuclear plant accident,Equipment Rupture,,,,59.9043,29.0968
+20/02/1996,"Waterford, Connecticut, United States",Millstone Nuclear Power Plant shutdown,Valve Leak,0,,,41.3557,-72.1564
+02/09/1996,"Crystal River, Florida, United States",Crystal River Unit 3 shutdown,Equipment Malfunction,0,,,28.9744,-82.648
+30/09/1999,"Ibaraki Prefecture, Japan",Tokaimura nuclear accident,Operational/Safety Procedures,2,,4,36.3075,140.3196
+16/02/2002,"Oak Harbor, Ohio, United States",Davis-Besse reactor outage,Corrosion,0,,3,41.5145,-83.146
+10/04/2003,"Paks, Hungary",Paks Nuclear Power Plant fuel rod collapse,Corrosion Cleaning,0,,3,46.5824,18.8467
+09/08/2004,"Fukui Prefecture, Japan",Mihama Nuclear Power Plant explosion,Steam Explosion,4,,1,35.6581,136.1267
+25/07/2006,"Forsmark, Sweden",Forsmark Nuclear Power Plant electrical fault,Safety Systems Failure,0,,2,60.4054,18.2127
+11/03/2011,"Fukushima, Japan",Fukushima nuclear disaster,Natural Disaster/Operational Failure,4,,7,37.7749,140.4694
+12/09/2011,"Marcoule, France",Marcoule Nuclear Site blast,Industrial Accident,1,,,44.1467,4.7528
