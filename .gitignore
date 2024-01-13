@@ -1,2 +1,7 @@
 .DS_Store
 .vscode/settings.json
+Applying/mnist_model.tf/fingerprint.pb
+Applying/mnist_model.tf/keras_metadata.pb
+Applying/mnist_model.tf/saved_model.pb
+Applying/mnist_model.tf/variables/variables.data-00000-of-00001
+Applying/mnist_model.tf/variables/variables.index
