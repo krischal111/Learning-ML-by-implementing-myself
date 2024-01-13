@@ -15,3 +15,9 @@ I made this while I was learning more ML, (now into clustering). I am already in
 ### 3. [Mathematics of the multiple linear regression model](Multiple-linear-regression-models/Theory.md)
 
 I made this while I was trying to make sense of the mathematics of the Multiple Linear Regression Model. I was having hard time achiving more clarity in derivation of the gradient of the loss function. I tried to rigorously verify all the steps myself. My exams are over, and vacations have started. My exams were great btw.
+
+### 4. [A simple deep learning model from scratch (that works)](Deep-Learning-Model/deep-learning-complete.ipynb)
+
+I made this around January to know what it takes to make a deep learning model that works. It was super defficult but at the same time very rewarding as well. It was well worth it at the end, seeing not only just your model, but implementation of the intrinsics working as expected.
+
+I don't even know what to say about this. It was very difficult, but it's just the basic. Accuracy isn't even that high, because training is still slow. This project increased my appreciations for the Machine Learning Framework developers, like the ones who developed Tensorflow, PyTorch, SciKit learn, etc. And it also helped me to gain confidence that if I think of some new model, new architechture, or some tweak in the usual way machine learning are done nowadays, I can implement them myself and evaluate it's performane. It was amazing experience.
